@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Works</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-home">HOME</a>
+  <ul class="nav-links">
+    <li><a href="works.html">Works</a></li>
+    <li><a href="about_1.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <h1 class="page-title">Selected Works</h1>
+
+  <div class="work-grid">
+
+    <a href="OutofOffice.html" class="work-card">
+      <img src="images/project1-cover.png" alt="">
+      <div class="work-info">
+        <h2>Out of Office</h2>
+        <p>Brand Strategy / Campaign Concept</p>
+      </div>
+    </a>
+
+    <a href="nature-is-healing_6.html" class="work-card">
+      <img src="images/project2-cover.png" alt="">
+      <div class="work-info">
+        <h2>Nature is Healing</h2>
+        <p>Self-Initiated Trend Report</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+<footer></footer>
+<script>
+const cur=document.getElementById("cur"),ring=document.getElementById("curRing");
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+"px";cur.style.top=my+"px";});
+(function t(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+"px";ring.style.top=ry+"px";requestAnimationFrame(t);})();
+document.querySelectorAll("a").forEach(el=>{
+  el.addEventListener("mouseenter",()=>ring.classList.add("on"));
+  el.addEventListener("mouseleave",()=>ring.classList.remove("on"));
+});
+</script>
+</body>
+</html> 
+

@@ -1,0 +1,159 @@
+
+:root {
+  --bg: #0A0807;
+  --red: #C0281A;
+  --red2: #8C1A10;
+  --muted: rgba(180,60,30,.45);
+  --sans: 'Inter', sans-serif;
+  --script: 'Homemade Apple', cursive;
+  --display: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  font-family: var(--sans);
+}
+h1 {
+  color: var(--red);
+  font-family: var(--display);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+/* Layout Base */
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--red);
+  font-family: var(--sans);
+}
+
+.page {
+  padding: 160px 80px 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: var(--display);
+  font-size: 64px;
+  letter-spacing: .08em;
+  margin-bottom: 80px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+
+.work-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card img {
+  width: 100%;
+  display: block;
+  transition: opacity .3s ease;
+}
+
+.work-card:hover img {
+  opacity: .7;
+}
+
+.work-info {
+  margin-top: 16px;
+}
+
+.work-info h2 {
+  font-family: var(--display);
+  font-size: 24px;
+  margin: 0;
+}
+
+.work-info p {
+  font-size: 12px;
+  letter-spacing: .12em;
+  opacity: .6;
+}
+
+.contact-page {
+  max-width: 700px;
+}
+
+.contact-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  opacity: .8;
+}
+
+.contact-email {
+  font-family: var(--display);
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--red);
+  transition: opacity .3s ease;
+}
+
+.contact-email:hover {
+  opacity: .6;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 600;
+  padding: 28px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-home {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  opacity: .7;
+  transition: opacity .2s;
+}
+
+.nav-home:hover {
+  opacity: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--red);
+  text-decoration: none;
+  opacity: .7;
+  transition: opacity .2s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+ 

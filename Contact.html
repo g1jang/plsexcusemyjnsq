@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  
+  <ul class="nav-links"><a href="index.html">Home</a></li>
+    <li><a href="works.html">Works</a></li> 
+    <li><a href="about_1.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page contact-page">
+  <h1 class="page-title">let's TALK...CREATE... WORK... GROW... </h1>
+
+  <p class="contact-text">
+    Budding creative strategist focused on big ideas, storytelling, and collaboration. Open to any and all opportunities—feel free to say hi!
+  </p>
+
+  <a href="mailto:jnjang2@yahoo.com" class="contact-email">
+    jnjang2@yahoo.com
+  </a>
+
+</div>
+<script>
+const cur=document.getElementById("cur"),ring=document.getElementById("curRing");
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+"px";cur.style.top=my+"px";});
+(function t(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+"px";ring.style.top=ry+"px";requestAnimationFrame(t);})();
+document.querySelectorAll("a").forEach(el=>{
+  el.addEventListener("mouseenter",()=>ring.classList.add("on"));
+  el.addEventListener("mouseleave",()=>ring.classList.remove("on"));
+});
+</script>
+</body>
+</html>
+ 
